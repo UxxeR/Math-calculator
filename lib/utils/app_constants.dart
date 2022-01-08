@@ -3,14 +3,14 @@ import 'package:flutter/material.dart';
 const Color mainHexColor = Color(0xFF10001f);
 const Color primaryAccentHexColor = Color(0xFF690090);
 const Color secondaryAccentHexColor = Color(0xFFcc42ff);
-const Color primaryResetAccentHexColor = Color(0xFF7900a3);
-const Color secondaryResetAccentHexColor = Color(0xFF300041);
+Color primaryResetAccentHexColor = const Color(0xFF690090).withOpacity(0.35);
+Color secondaryResetAccentHexColor = const Color(0xFFcc42ff).withOpacity(0.35);
 LinearGradient buttonGradient = const LinearGradient(
   colors: [secondaryAccentHexColor, primaryAccentHexColor],
   begin: Alignment.topLeft,
   end: Alignment.bottomRight,
 );
-LinearGradient resetButtonGradient = const LinearGradient(
+LinearGradient resetButtonGradient = LinearGradient(
   colors: [secondaryResetAccentHexColor, primaryResetAccentHexColor],
   begin: Alignment.topLeft,
   end: Alignment.bottomRight,
